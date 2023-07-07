@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
+    
     <title>AluraBooks</title>
 </head>
 <body>
@@ -45,5 +50,36 @@
             <a href="#"><img src="src/img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
     </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontra em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="src/img/ApacheKafka.png" alt="Livro sobre Apache kafka e spring boot da alura books"></div>
+      <div class="swiper-slide"><img src="src/img/Liderança.png" alt="Livro sobre liderança em design da alura books"></div>
+      <div class="swiper-slide"><img src="src/img/Javascript.png" alt="Livro sobre Javascript"></div>
+      <div class="swiper-slide"><img src="src/img/Guia Front-end.png" alt="Livro guia Front-end"></div>
+      <div class="swiper-slide"><img src="src/img/Portugol.png" alt="Livro sobre portugol"></div>
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="src/script/carrossel.js"></script>    
 </body>
 </html>
